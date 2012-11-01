@@ -38,11 +38,22 @@ snippet item
 	\begin{itemize}
 		\item ${1}
 	\end{itemize}
+# Item
+snippet it
+	\item ${1}
 # Description
 snippet desc
 	\begin{description}
 		\item[${1}] ${2}
 	\end{description}
+# Figure
+snippet fig
+	\begin{figure}[H]
+	        \centering
+		\includegraphics[width=${1:0.7}\textwidth]{images/${2}}
+		\caption{${4}}
+		\label{fig:${3}}
+	\end{figure}
 # Matrix
 snippet mat
 	\begin{${1:p/b/v/V/B/small}matrix}
