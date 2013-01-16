@@ -49,7 +49,7 @@ snippet desc
 # Figure
 snippet fig
 	\begin{figure}[H]
-	        \centering
+		\centering
 		\includegraphics[width=${1:0.7}\textwidth]{images/${2}}
 		\caption{${4}}
 		\label{fig:${3}}
@@ -124,3 +124,5 @@ snippet section
 	${1:Section}~\ref{${2:sec:}}${3}
 snippet page
 	${1:page}~\pageref{${2}}${3}
+snippet todo
+	\todo{${1}}
