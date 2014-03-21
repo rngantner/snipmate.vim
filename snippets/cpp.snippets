@@ -34,3 +34,8 @@ snippet fori
 	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
 		${4:/* code */}
 	}
+snippet osi
+	std::cout << "${1}";
+	std::copy(${2:a}.begin(), $2.end(), std::ostream_iterator<${3:double}>(${4:std::cout}, ${5:", "}));
+	std::cout << std::endl;
+	}
